@@ -1,0 +1,674 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      十大常用实用计算机编程语言 | Hexo
+    
+  </title>
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content>
+  <meta name="description" content>
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/plugin/jquery/jquery.min.js"></script>
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「十大常用实用计算机编程语言」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2019/03/05/十大常用实用计算机编程语言/" itemprop="url">
+		十大常用实用计算机编程语言
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2019/03/05/十大常用实用计算机编程语言/" itemprop="url">
+		<time datetime="2019-03-05T14:58:14.000Z" itemprop="dateUpdated">
+	  		2019-03-05
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h2 id="备注：本篇博客仅为本菜鸡的浅薄之见。并带有一定的主观性且无任何排名。且我根据软件安装使用的终端平台不同做了主要的分类"><a href="#备注：本篇博客仅为本菜鸡的浅薄之见。并带有一定的主观性且无任何排名。且我根据软件安装使用的终端平台不同做了主要的分类" class="headerlink" title="备注：本篇博客仅为本菜鸡的浅薄之见。并带有一定的主观性且无任何排名。且我根据软件安装使用的终端平台不同做了主要的分类"></a><em>备注：本篇博客仅为本菜鸡的浅薄之见。并带有一定的主观性且无任何排名。且我根据软件安装使用的终端平台不同做了主要的分类</em></h2><h1 id="移动智能终端"><a href="#移动智能终端" class="headerlink" title="移动智能终端"></a>移动智能终端</h1><p>目前常用的移动智能终端主要为Android系统的移动智能终端和苹果的iOS系统阵营的智能终端（iPhone和iPad，iPod）。由于目前阿里家的云OS和微软家的windows phone（windows phone系统已经快要彻底的凉凉了，心底突然莫名的有点感伤呐。突然想起了小时候能够砸核桃的诺基亚手机。当年诺基亚神机可望而不可即，如今Symbian OS坟头草青青。说到了草青青。我就想到了一句以前看到的环保标语：绿草茵茵，请勿践踏！现在的标语：今天你踩在我头上 ，明天我长到你坟上。如今三棵树广场的青青草原还在育草期中，小伙伴们不要乱踩乱踏哦）的市场占有率还是比较低的，所以将其视为小众系统。而且云OS和Android系统都是基于Linux系统开发的。这俩表兄弟在软件兼容性上做的还是挺不错的。即使不兼容。我阿里系也要兼容。阿里爸爸就是流弊。</p>
+<h3 id="安卓开发之java"><a href="#安卓开发之java" class="headerlink" title="安卓开发之java"></a>安卓开发之java</h3><p>Java目前仍旧是软件开发最主流的语言之一。Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程 。</p>
+<p>Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点。Java可以编写桌面应用程序、Web应用程序、分布式系统和嵌入式系统应用程序等。<br>目前Java还是Android开发的老大哥。我Java，安卓开发老大哥稳稳的。 Java yes</p>
+<h3 id="安卓开发之kotlin"><a href="#安卓开发之kotlin" class="headerlink" title="安卓开发之kotlin"></a>安卓开发之kotlin</h3><p>我 kotlin（柯特林）  啧啧啧一听就像是加特林。突突突，哒哒哒。满口的伏特加的味道。没错，柯特林的发明者就是毛熊老大哥们。Kotlin 来源于一个岛屿的名字，全称是 Kotlin Island，是英语「科特林岛」之意。这个小岛属于俄罗斯。<br>Kotlin 是一个用于现代多平台应用的静态编程语言由 JetBrains 开发。<br>Kotlin可以编译成Java字节码，也可以编译成JavaScript，方便在没有JVM的设备上运行。这个就灰常强势了，我不仅向Java老大哥学习，我还兼容取代你。嘿嘿嘿。<br>Kotlin已正式成为Android官方支持开发语言。<br>Kotlin的简单编年史：<br> 2010 年 ：JetBrains 着手开发 Kotlin。<br> 2011 年 7 月 ：JetBrains 公开宣布 Kotlin。<br> 2012 年 2 月 ：JetBrains 在 Apache 2 许可证下开源了 Kotlin 的源码。目前 Kotlin 的官方源代码在 Github 上 <a href="https://github.com/JetBrains/kotlin" target="_blank" rel="noopener">https://github.com/JetBrains/kotlin</a> 。<br> 2016 年 2 月 ：JetBrains 发布了 Kotlin 1.0 版，算是比较稳定的正式版。许诺之后一直会保持向后兼容。<br> 2017 年目前最新版本 ：1.1.2（2017 年 6 月）。相比 Kotlin 1.0 版本时，和 Kotlin 有关的代码数目从 210 万行飞升到 1000 多万行。<br> kotlin虽然年轻但是未来必定大有作为。我也在带着学kotlin哦。悄咪咪提一句。kotlin的最大的优势不是在安卓开发。而是在腾讯系的微信小程序开发上。难道在中国姓马的的就那么厉害吗？现在中国的A股小程序板块已经炒上天了。感兴趣的小伙伴可以关注一下哦。说不定一个午觉就赚够了一年的鸡腿钱呢。</p>
+<h3 id="iOS官方开发语言之swift"><a href="#iOS官方开发语言之swift" class="headerlink" title="iOS官方开发语言之swift"></a>iOS官方开发语言之swift</h3><p> <em>在苍茫的大海上，狂风卷集着乌云。在乌云和大海之间，海燕像黑色的闪电，在高傲地飞翔。<br>一会儿翅膀碰着波浪，一会儿箭一般地直冲向乌云，它叫喊着，──就在这鸟儿勇敢的叫喊声里，乌云听出了欢乐。<br>在这叫喊声里──充满着对暴风雨的渴望！在这叫喊声里，乌云听出了愤怒的力量、热情的火焰和胜利的信心。<br>海燕叫喊着，飞翔着，像黑色的闪电，箭一般地穿过乌云，翅膀掠起波浪的飞沫。<br>看吧，它飞舞着，像个精灵，──高傲的、黑色的暴风雨的精灵，——它在大笑，它又在号叫……它笑那些乌云，它因为欢乐而号叫！<br>这个敏感的精灵，——它从雷声的震怒里，早就听出了困乏，它深信，乌云遮不住太阳，──是的，遮不住的！<br>狂风吼叫……雷声轰响……<br>一堆堆乌云，像青色的火焰，在无底的大海上燃烧。大海抓住闪电的箭光，把它们熄灭在自己的深渊里。这些闪电的影子，活像一条条火蛇，在大海里蜿蜒游动，一晃就消失了。<br>——暴风雨！暴风雨就要来啦！<br>这是勇敢的海燕，在怒吼的大海上，在闪电中间，高傲地飞翔；这是胜利的预言家在叫喊：<br>——让暴风雨来得更猛烈些吧！</em><br>没错  苹果家的官方开发语言swift就叫——雨燕  他的log就是一只展翅高飞的小燕子。啥时候才能赚得到小钱钱吃得起燕窝呢？狗头。燕子那么可爱还是不拆他们的家了吧。 Swift是苹果于2014年WWDC（苹果开发者大会）发布的新开发语言，可与Objective-C共同运行于Mac OS和iOS平台，用于搭建基于苹果平台的应用程序。<br>Swift是一款易学易用的编程语言，而且它还是第一套具有与脚本语言同样的表现力和趣味性的系统编程语言。Swift的设计以安全为出发点，以避免各种常见的编程错误类别。 [1]<br>2015年12月4日，苹果公司宣布其Swift编程语言现在开放源代码。长600多页的 The Swift Programming Language [2]  可以在线免费下载。Swift 是一种新的编程语言，用于编写 iOS 和 macOS 应用。Swift 结合了 C 和 Objective-C 的优点并且不受C兼容性的限制。Swift 采用安全的编程模式并添加了很多新特性，这将使编程更简单，更灵活，也更有趣。Swift 是基于成熟而且倍受喜爱的 Cocoa 和 Cocoa Touch 框架，他的降临将重新定义软件开发。这听起来还真的很强势呢。但是想一想苹果家的产品的价格。对不起打扰啦。告辞。我妈喊我回家养鱼了。</p>
+<h2 id="今晚先写这么多。码字太累了。困了洗洗睡咯"><a href="#今晚先写这么多。码字太累了。困了洗洗睡咯" class="headerlink" title="今晚先写这么多。码字太累了。困了洗洗睡咯"></a>今晚先写这么多。码字太累了。困了洗洗睡咯</h2><h2 id="备注-十分重要-真的很重要-点赞评论留言点击小心心特效打赏打赏打赏等系统择日上线。敬请期待哦。"><a href="#备注-十分重要-真的很重要-点赞评论留言点击小心心特效打赏打赏打赏等系统择日上线。敬请期待哦。" class="headerlink" title="备注 十分重要 真的很重要  点赞评论留言点击小心心特效打赏打赏打赏等系统择日上线。敬请期待哦。"></a>备注 十分重要 真的很重要  点赞评论留言点击小心心特效<em>打赏打赏打赏</em>等系统择日上线。敬请期待哦。</h2>	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2019/05/14/图片测试/" title="图片测试" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2019/03/04/我的第一篇博客——关于hexo博客框架/" title="我的第一篇博客——关于hexo博客框架" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/14/图片测试/" title="图片测试">
+								图片测试			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 14日, 2019				
+							</p>
+							<p class="relate-post-content">
+								图片添加测试     哈哈哈哈哈哈哈，深夜放毒，应该不会挨打的吧(･´ω`･)っ[ 恭喜发财 ](Ｕ・ω・)⊃红包拿来*
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/14/图片测试/" title="图片测试">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="图片测试"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/03/04/我的第一篇博客——关于hexo博客框架/" title="我的第一篇博客——关于hexo博客框架">
+								我的第一篇博客——关于hexo博客框架			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 4日, 2019				
+							</p>
+							<p class="relate-post-content">
+								关于hexohexo是一个快速, 简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/03/04/我的第一篇博客——关于hexo博客框架/" title="我的第一篇博客——关于hexo博客框架">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="我的第一篇博客——关于hexo博客框架"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2020, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>
