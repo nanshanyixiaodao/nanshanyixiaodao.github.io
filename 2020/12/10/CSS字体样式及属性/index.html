@@ -1,0 +1,1090 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+       | Hexo
+    
+  </title>
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content>
+  <meta name="description" content>
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/plugin/jquery/jquery.min.js"></script>
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2020/12/10/CSS字体样式及属性/" itemprop="url">
+		<time datetime="2020-12-10T11:47:02.174Z" itemprop="dateUpdated">
+	  		2020-12-07
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1 id="CSS字体样式及属性"><a href="#CSS字体样式及属性" class="headerlink" title="CSS字体样式及属性"></a>CSS字体样式及属性</h1><h2 id="font字体"><a href="#font字体" class="headerlink" title="font字体"></a>font字体</h2><p>在 CSS 中，有两种不同类型的字体系列名称：</p>
+<ul>
+<li>通用字体系列 - 拥有相似外观的字体系统组合（比如 “Serif” 或 “Monospace”）</li>
+<li>特定字体系列 - 具体的字体系列（比如 “Times” 或 “Courier”）</li>
+</ul>
+<p>除了各种特定的字体系列外，CSS 定义了 5 种通用字体系列：</p>
+<ul>
+<li>Serif 字体</li>
+<li>Sans-serif 字体</li>
+<li>Monospace 字体</li>
+<li>Cursive 字体</li>
+<li>Fantasy 字体</li>
+</ul>
+<h3 id="字体大小font-size"><a href="#字体大小font-size" class="headerlink" title="字体大小font-size"></a>字体大小font-size</h3><h3 id="指定字体系列font-family"><a href="#指定字体系列font-family" class="headerlink" title="指定字体系列font-family"></a>指定字体系列font-family</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;<span class="attribute">font-family</span>: 宋体;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="字体粗细font-weight"><a href="#字体粗细font-weight" class="headerlink" title="字体粗细font-weight"></a>字体粗细font-weight</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.normal</span> &#123;<span class="attribute">font-weight</span>:normal;&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.thick</span> &#123;<span class="attribute">font-weight</span>:bold;&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.thicker</span> &#123;<span class="attribute">font-weight</span>:<span class="number">900</span>;&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">normal</td>
+<td style="text-align:left">默认值。定义标准的字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">bold</td>
+<td style="text-align:left">定义粗体字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">bolder</td>
+<td style="text-align:left">定义更粗的字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">lighter</td>
+<td style="text-align:left">定义更细的字符。</td>
+</tr>
+<tr>
+<td style="text-align:left">100~~900</td>
+<td style="text-align:left">定义由粗到细的字符。400 等同于 normal，而 700 等同于 bold。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承字体的粗细。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="字体风格-font-style"><a href="#字体风格-font-style" class="headerlink" title="字体风格  font-style"></a>字体风格  font-style</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.normal</span> &#123;<span class="attribute">font-style</span>:normal;&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.italic</span> &#123;<span class="attribute">font-style</span>:italic;&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.oblique</span> &#123;<span class="attribute">font-style</span>:oblique;&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">normal</td>
+<td style="text-align:left">默认值。浏览器显示一个标准的字体样式。</td>
+</tr>
+<tr>
+<td style="text-align:left">italic</td>
+<td style="text-align:left">浏览器会显示一个斜体的字体样式。</td>
+</tr>
+<tr>
+<td style="text-align:left">oblique</td>
+<td style="text-align:left">浏览器会显示一个倾斜的字体样式。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承字体样式。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="字体变形font-variant"><a href="#字体变形font-variant" class="headerlink" title="字体变形font-variant"></a>字体变形font-variant</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;<span class="attribute">font-variant</span>:small-caps;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font.asp" target="_blank" rel="noopener">font</a></td>
+<td>简写属性。作用是把所有针对字体的属性设置在一个声明中。</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font-family.asp" target="_blank" rel="noopener">font-family</a></td>
+<td>设置字体系列。</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font-size.asp" target="_blank" rel="noopener">font-size</a></td>
+<td>设置字体的尺寸。</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font-size-adjust.asp" target="_blank" rel="noopener">font-size-adjust</a></td>
+<td>当首选字体不可用时，对替换字体进行智能缩放。（CSS2.1 已删除该属性。）</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font-stretch.asp" target="_blank" rel="noopener">font-stretch</a></td>
+<td>对字体进行水平拉伸。（CSS2.1 已删除该属性。）</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font-style.asp" target="_blank" rel="noopener">font-style</a></td>
+<td>设置字体风格。</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_font-variant.asp" target="_blank" rel="noopener">font-variant</a></td>
+<td>以小型大写字体或者正常字体显示文本。</td>
+</tr>
+<tr>
+<td><a href="https://www.w3school.com.cn/cssref/pr_font_weight.asp" target="_blank" rel="noopener">font-weight</a></td>
+<td>设置字体的粗细。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="CSS-文本属性（Text）"><a href="#CSS-文本属性（Text）" class="headerlink" title="CSS 文本属性（Text）"></a>CSS 文本属性（Text）</h2><h3 id="字体颜色-color"><a href="#字体颜色-color" class="headerlink" title="字体颜色  color"></a>字体颜色  color</h3><p>为不同元素设置文本颜色：</p>
+<p>color 属性规定文本的颜色。</p>
+<p>这个属性设置了一个元素的前景色（在 HTML 表现中，就是元素文本的颜色）；光栅图像不受 color 影响。这个颜色还会应用到元素的所有边框，除非被 border-color 或另外某个边框颜色属性覆盖。</p>
+<p>要设置一个元素的前景色，最容易的方法是使用 color 属性。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="attribute">color</span>:red;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="selector-tag">h1</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="attribute">color</span>:<span class="number">#00ff00</span>;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="selector-tag">p</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="attribute">color</span>:<span class="built_in">rgb</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><em>color_name</em></td>
+<td style="text-align:left">规定颜色值为颜色名称的颜色（比如 red）。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>hex_number</em></td>
+<td style="text-align:left">规定颜色值为十六进制值的颜色（比如 #ff0000）。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>rgb_number</em></td>
+<td style="text-align:left">规定颜色值为 rgb 代码的颜色（比如 rgb(255,0,0)）。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承颜色。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="direction-属性"><a href="#direction-属性" class="headerlink" title="direction 属性"></a>direction 属性</h3><p><strong>direction 属性规定文本的方向 / 书写方向。</strong></p>
+<p>该属性指定了块的基本书写方向，以及针对 Unicode 双向算法的嵌入和覆盖方向。不支持双向文本的用户代理可以忽略这个属性。</p>
+<p><strong>例：</strong> 把文本方向设置为“从右向左”：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.div</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="attribute">direction</span>: rtl</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="letter-spacing-字符间距-属性"><a href="#letter-spacing-字符间距-属性" class="headerlink" title="letter-spacing 字符间距 属性"></a>letter-spacing 字符间距 属性</h3><p>letter-spacing 属性增加或减少字符间的空白（字符间距）。</p>
+<p>该属性定义了在文本字符框之间插入多少空间。由于字符字形通常比其字符框要窄，指定长度值时，会调整字母之间通常的间隔。因此，normal 就相当于值为 0。</p>
+<p><strong>注释：</strong>允许使用负值，这会让字母之间挤得更紧。</p>
+<p><strong>例：</strong>设置 h1 和 h2 元素的字母间距：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;<span class="attribute">letter-spacing</span>:<span class="number">2px</span>&#125;</span><br><span class="line"><span class="selector-tag">h2</span> &#123;<span class="attribute">letter-spacing</span>:-<span class="number">3px</span>&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">normal</td>
+<td style="text-align:left">默认。规定字符间没有额外的空间。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>length</em></td>
+<td style="text-align:left">定义字符间的固定空间（允许使用负值）。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 letter-spacing 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="line-height-设置行间距-行高-属性"><a href="#line-height-设置行间距-行高-属性" class="headerlink" title="line-height 设置行间距/行高 属性"></a>line-height 设置行间距/行高 属性</h3><p>line-height 属性设置行间的距离（行高）。</p>
+<p><strong>注释：</strong>不允许使用负值。</p>
+<p><strong>说明</strong></p>
+<p>该属性会影响行框的布局。在应用到一个块级元素时，它定义了该元素中基线之间的最小距离而不是最大距离。</p>
+<p>line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。</p>
+<p>原始数字值指定了一个缩放因子，后代元素会继承这个缩放因子而不是计算值。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">normal</td>
+<td style="text-align:left">默认。设置合理的行间距。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>number</em></td>
+<td style="text-align:left">设置数字，此数字会与当前的字体尺寸相乘来设置行间距。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>length</em></td>
+<td style="text-align:left">设置固定的行间距。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>%</em></td>
+<td style="text-align:left">基于当前字体尺寸的百分比行间距。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 line-height 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-align-属性"><a href="#text-align-属性" class="headerlink" title="text-align 属性"></a>text-align 属性</h3><p><strong>text-align 属性规定元素中的文本的水平对齐方式。</strong></p>
+<p>该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。</p>
+<p><strong>例：</strong></p>
+<p>设置 h1、h2、h3 元素的文本对齐方式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;<span class="attribute">text-align</span>:center&#125;</span><br><span class="line"><span class="selector-tag">h2</span> &#123;<span class="attribute">text-align</span>:left&#125;</span><br><span class="line"><span class="selector-tag">h3</span> &#123;<span class="attribute">text-align</span>:right&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">left</td>
+<td style="text-align:left">把文本排列到左边。默认值：由浏览器决定。</td>
+</tr>
+<tr>
+<td style="text-align:left">right</td>
+<td style="text-align:left">把文本排列到右边。</td>
+</tr>
+<tr>
+<td style="text-align:left">center</td>
+<td style="text-align:left">把文本排列到中间。</td>
+</tr>
+<tr>
+<td style="text-align:left">justify</td>
+<td style="text-align:left">实现两端对齐文本效果。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 text-align 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-decoration-文本装饰-属性"><a href="#text-decoration-文本装饰-属性" class="headerlink" title="text-decoration 文本装饰 属性"></a>text-decoration 文本装饰 属性</h3><p>text-decoration 属性规定添加到文本的修饰。</p>
+<p><strong>注释：</strong>修饰的颜色由 “color” 属性设置。</p>
+<p><strong>说明：</strong></p>
+<p>这个属性允许对文本设置某种效果，如加下划线。如果后代元素没有自己的装饰，祖先元素上设置的装饰会“延伸”到后代元素中。不要求用户代理支持 blink。</p>
+<p><strong>例：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;<span class="attribute">text-decoration</span>:overline&#125;</span><br><span class="line"><span class="selector-tag">h2</span> &#123;<span class="attribute">text-decoration</span>:line-through&#125;</span><br><span class="line"><span class="selector-tag">h3</span> &#123;<span class="attribute">text-decoration</span>:underline&#125;</span><br><span class="line"><span class="selector-tag">h4</span> &#123;<span class="attribute">text-decoration</span>:blink&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">none</td>
+<td style="text-align:left">默认。定义标准的文本。</td>
+</tr>
+<tr>
+<td style="text-align:left">underline</td>
+<td style="text-align:left">定义文本下的一条线。</td>
+</tr>
+<tr>
+<td style="text-align:left">overline</td>
+<td style="text-align:left">定义文本上的一条线。</td>
+</tr>
+<tr>
+<td style="text-align:left">line-through</td>
+<td style="text-align:left">定义穿过文本下的一条线。</td>
+</tr>
+<tr>
+<td style="text-align:left">blink</td>
+<td style="text-align:left">定义闪烁的文本。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 text-decoration 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-shadow-文本阴影属性"><a href="#text-shadow-文本阴影属性" class="headerlink" title="text-shadow  文本阴影属性"></a>text-shadow  文本阴影属性</h3><p>text-shadow 属性向文本设置阴影。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="attribute">text-shadow</span>: <span class="number">5px</span> <span class="number">5px</span> <span class="number">5px</span> <span class="number">#FF0000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th><em>h-shadow</em></th>
+<th>必需。水平阴影的位置。允许负值。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>v-shadow</em></td>
+<td>必需。垂直阴影的位置。允许负值。</td>
+</tr>
+<tr>
+<td><em>blur</em></td>
+<td>可选。模糊的距离。</td>
+</tr>
+<tr>
+<td><em>color</em></td>
+<td>可选。阴影的颜色。参阅 <a href="https://www.w3school.com.cn/cssref/css_colors_legal.asp" target="_blank" rel="noopener">CSS 颜色值</a>。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-transform-文本大小-属性"><a href="#text-transform-文本大小-属性" class="headerlink" title="text-transform  文本大小 属性"></a>text-transform  文本大小 属性</h3><p>text-transform 属性控制文本的大小写。</p>
+<p><strong>说明</strong></p>
+<p>这个属性会改变元素中的字母大小写，而不论源文档中文本的大小写。如果值为 capitalize，则要对某些字母大写，但是并没有明确定义如何确定哪些字母要大写，这取决于用户代理如何识别出各个“词”。</p>
+<p><strong>例：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;<span class="attribute">text-transform</span>:uppercase&#125;</span><br><span class="line"><span class="selector-tag">h2</span> &#123;<span class="attribute">text-transform</span>:capitalize&#125;</span><br><span class="line"><span class="selector-tag">p</span> &#123;<span class="attribute">text-transform</span>:lowercase&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">none</td>
+<td style="text-align:left">默认。定义带有小写字母和大写字母的标准的文本。</td>
+</tr>
+<tr>
+<td style="text-align:left">capitalize</td>
+<td style="text-align:left">文本中的每个单词以大写字母开头。</td>
+</tr>
+<tr>
+<td style="text-align:left">uppercase</td>
+<td style="text-align:left">定义仅有大写字母。</td>
+</tr>
+<tr>
+<td style="text-align:left">lowercase</td>
+<td style="text-align:left">定义无大写字母，仅有小写字母。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 text-transform 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-indent-首行缩进-属性"><a href="#text-indent-首行缩进-属性" class="headerlink" title="text-indent 首行缩进 属性"></a>text-indent 首行缩进 属性</h3><p><strong>例：</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span></span><br><span class="line">  &#123;</span><br><span class="line">  <span class="attribute">text-indent</span>:<span class="number">50px</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><em>length</em></td>
+<td style="text-align:left">定义固定的缩进。默认值：0。</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>%</em></td>
+<td style="text-align:left">定义基于父元素宽度的百分比的缩进。</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 text-indent 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-wrap-文本换行-属性"><a href="#text-wrap-文本换行-属性" class="headerlink" title="text-wrap 文本换行 属性"></a>text-wrap 文本换行 属性</h3><p>不支持换行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p.test &#123;text-wrap:none;&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">normal</td>
+<td style="text-align:left">只在允许的换行点进行换行。</td>
+</tr>
+<tr>
+<td style="text-align:left">none</td>
+<td style="text-align:left">不换行。元素无法容纳的文本会溢出。</td>
+</tr>
+<tr>
+<td style="text-align:left">unrestricted</td>
+<td style="text-align:left">在任意两个字符间换行。</td>
+</tr>
+<tr>
+<td style="text-align:left">suppress</td>
+<td style="text-align:left">压缩元素中的换行。浏览器只在行中没有其他有效换行点时进行换行。</td>
+</tr>
+</tbody>
+</table>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2020/12/10/第二天/" title="" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2020/12/10/HTML基础/" title="" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/05/14/图片测试/" title="图片测试">
+								图片测试			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 14日, 2019				
+							</p>
+							<p class="relate-post-content">
+								图片添加测试     哈哈哈哈哈哈哈，深夜放毒，应该不会挨打的吧(･´ω`･)っ[ 恭喜发财 ](Ｕ・ω・)⊃红包拿来*
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/05/14/图片测试/" title="图片测试">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="图片测试"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/03/05/十大常用实用计算机编程语言/" title="十大常用实用计算机编程语言">
+								十大常用实用计算机编程语言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 5日, 2019				
+							</p>
+							<p class="relate-post-content">
+								备注：本篇博客仅为本菜鸡的浅薄之见。并带有一定的主观性且无任何排名。且我根据软件安装使用的终端平台不同做了主要的分类移动智能终端目前常用的移动智能终端主要为Android系统的移动智能终端和苹果的iOS系统阵营的智能终端（iPhone...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/03/05/十大常用实用计算机编程语言/" title="十大常用实用计算机编程语言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="十大常用实用计算机编程语言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/03/04/我的第一篇博客——关于hexo博客框架/" title="我的第一篇博客——关于hexo博客框架">
+								我的第一篇博客——关于hexo博客框架			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 4日, 2019				
+							</p>
+							<p class="relate-post-content">
+								关于hexohexo是一个快速, 简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/03/04/我的第一篇博客——关于hexo博客框架/" title="我的第一篇博客——关于hexo博客框架">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="我的第一篇博客——关于hexo博客框架"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2020, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+	</body>	
+</html>
